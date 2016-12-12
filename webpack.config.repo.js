@@ -16,13 +16,13 @@ module.exports = {
         }]
     },
     entry: [
-        './src/index.jsx'
+        './src/repo/index.jsx'
     ],
     output: {
         path: __dirname + '/build/',
         publishpath: '',
-        filename: 'chat.js',
-        library: 'chat',
+        filename: 'repo.js',
+        library: 'repo',
         libraryTarget: 'var'
     }
 }

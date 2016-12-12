@@ -9,20 +9,18 @@ module.exports = {
             loader: 'babel-loader',
             query: {
                 presets: [
-                    'es2015',
                     'react'
                 ]
             }
         }]
     },
     entry: [
-        './src/index.jsx'
+        './src/es5/index.jsx'
     ],
     output: {
         path: __dirname + '/build/',
-        publishpath: '',
-        filename: 'chat.js',
-        library: 'chat',
+        filename: 'hello.js',
+        library: 'hello',
         libraryTarget: 'var'
     }
 }
