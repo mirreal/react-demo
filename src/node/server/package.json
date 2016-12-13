@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "koa": "^1.2.4",
+    "node-jsx": "^0.13.3"
+  }
+}
