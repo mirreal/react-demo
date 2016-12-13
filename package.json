@@ -7,7 +7,7 @@
     "dev": "webpack --config webpack.config.js & webpack-dev-server --inline --hot --port 9999",
     "es5": "webpack --config webpack.config.es5.js",
     "es6": "webpack --config webpack.config.es6.js -p",
-    "repo": "webpack --config webpack.config.repo.js"
+    "repo": "webpack --config webpack.config.repo.js --progress --colors --watch"
   },
   "repository": {
     "type": "git",
