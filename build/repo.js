@@ -82,8 +82,6 @@ var repo =
 	    });
 	});
 
-	console.log(request);
-
 	_reactDom2.default.render(_react2.default.createElement(_RepoList2.default, { promise: request }), document.getElementById('container'));
 
 /***/ },
@@ -24440,6 +24438,10 @@ var repo =
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _style = __webpack_require__(188);
+
+	var _style2 = _interopRequireDefault(_style);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24502,7 +24504,7 @@ var repo =
 	                var repoList = repos.map(function (repo, index) {
 	                    return _react2.default.createElement(
 	                        'li',
-	                        { key: index },
+	                        { className: 'repo-item', key: index },
 	                        _react2.default.createElement(
 	                            'a',
 	                            { href: repo.html_url },
@@ -24510,9 +24512,10 @@ var repo =
 	                        ),
 	                        '(',
 	                        repo.stargazers_count,
-	                        'stars)',
+	                        ' stars)',
 	                        _react2.default.createElement('br', null),
-	                        ' ',
+	                        repo.full_name,
+	                        _react2.default.createElement('br', null),
 	                        repo.description
 	                    );
 	                });
@@ -24526,7 +24529,7 @@ var repo =
 	                    ),
 	                    _react2.default.createElement(
 	                        'ol',
-	                        null,
+	                        { className: 'repo-list' },
 	                        repoList
 	                    )
 	                );
@@ -24538,6 +24541,12 @@ var repo =
 	}(_react.Component);
 
 	exports.default = RepoList;
+
+/***/ },
+/* 188 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);
