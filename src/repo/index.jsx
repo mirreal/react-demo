@@ -10,8 +10,6 @@ let request = new Promise((resolve, reject) => {
     })
 })
 
-console.log(request)
-
 ReactDOM.render(
     <RepoList promise={request} />, document.getElementById('container')
 )

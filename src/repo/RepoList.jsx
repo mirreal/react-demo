@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import style from './style.less'
 
 export default class RepoList extends Component {
     constructor(props) {
@@ -33,17 +34,20 @@ export default class RepoList extends Component {
             let repos = this.state.data.items;
             let repoList = repos.map((repo, index) => {
                 return (
-                    <li key={index}>
+                    <li className="repo-item" key={index}>
                         <a href={repo.html_url}>{repo.name}</a>
-                        ({repo.stargazers_count}
-                        stars)
-                        <br/> {repo.description}</li>
+                        ({repo.stargazers_count} stars)
+                        <br/>
+                        {repo.full_name}
+                        <br/>
+                        {repo.description}
+                    </li>
                 );
             });
             return (
                 <main>
                     <h1>Most Popular JavaScript Projects in Github</h1>
-                    <ol>{repoList}</ol>
+                    <ol className="repo-list">{repoList}</ol>
                 </main>
             );
         }
