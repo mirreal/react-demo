@@ -1,11 +1,25 @@
-.style__repo-list___38cI2 {
-  padding: 10px;
-  border: 1px solid #900;
-  border-radius: 4px;
+.style__repo-list___1nTgz {
+    padding: 10px;
+    border: 1px solid #900;
+    border-radius: 6px;
 }
-.style__repo-list___38cI2 .style__repo-item___25yaS {
-  list-style-type: decimal;
-  list-style-position: inside;
-  padding: 10px;
-  border-bottom: 1px solid #900;
+
+.style__repo-item___TOeZM {
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding: 10px;
+    border-bottom: 1px solid #900;
+}
+
+.btn {
+    border-radius: 6px;
+}
+
+.style__no-use___2a2kv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: scale(2) 2s;
+    transition: scale(2) 2s;
+    background: red;
 }

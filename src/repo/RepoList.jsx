@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import styles from './style.less'
-// import styles from './style.css'
+// import styles from './style.less'
+import styles from './style.css'
 console.log(styles)
 
 export default class RepoList extends Component {
