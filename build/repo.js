@@ -24489,6 +24489,13 @@ var repo =
 	    }, {
 	        key: 'render',
 	        value: function render() {
+	            var nameStyle = {
+	                margin: 0,
+	                fontSize: '12px',
+	                color: 'orange',
+	                lineHeight: '16px'
+	            };
+
 	            if (this.state.loading) {
 	                return _react2.default.createElement(
 	                    'span',
@@ -24517,8 +24524,11 @@ var repo =
 	                        repo.stargazers_count,
 	                        ' stars)',
 	                        _react2.default.createElement('br', null),
-	                        repo.full_name,
-	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'p',
+	                            { style: nameStyle },
+	                            repo.full_name
+	                        ),
 	                        repo.description
 	                    );
 	                });

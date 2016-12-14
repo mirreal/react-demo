@@ -28,6 +28,13 @@ export default class RepoList extends Component {
     }
 
     render() {
+        let nameStyle = {
+            margin: 0,
+            fontSize: '12px',
+            color: 'orange',
+            lineHeight: '16px'
+        }
+
         if (this.state.loading) {
             return <span>Loading...</span>
         } else if (this.state.error !== null) {
@@ -40,8 +47,7 @@ export default class RepoList extends Component {
                         <a href={repo.html_url}>{repo.name}</a>
                         ({repo.stargazers_count} stars)
                         <br/>
-                        {repo.full_name}
-                        <br/>
+                        <p style={nameStyle}>{repo.full_name}</p>
                         {repo.description}
                     </li>
                 );
