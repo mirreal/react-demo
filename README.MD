@@ -68,9 +68,28 @@ plugins: [
 
 ## CSS Modules
 
-### CSS
+### react-css-modules
 
-### LESS
+用法
+
+```js
+import CSSModules from 'react-css-modules'
+import styles from './style.css'
+
+class RepoList extends Component {
+    // ...
+    render() {
+        // ...
+        return (
+            <ol styleName='repo-list'>{repoList}</ol>    
+        )
+    }
+}
+
+export default CSSModules(RepoList, styles)
+```
+
+用 `styleName` 代替 `className`，再也不用写 styles.xxx
 
 ## webpack
 

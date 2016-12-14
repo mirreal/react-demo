@@ -37,6 +37,7 @@
     "postcss": "^5.2.6",
     "postcss-cssnext": "^2.9.0",
     "postcss-loader": "^1.2.1",
+    "react-css-modules": "^4.1.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"

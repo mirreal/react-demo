@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import CSSModules from 'react-css-modules'
 // import styles from './style.less'
 import styles from './style.css'
 console.log(styles)
 
-export default class RepoList extends Component {
+class RepoList extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -43,7 +44,7 @@ export default class RepoList extends Component {
             let repos = this.state.data.items;
             let repoList = repos.map((repo, index) => {
                 return (
-                    <li className={styles['repo-item']} key={index}>
+                    <li styleName='repo-item' key={index}>
                         <a href={repo.html_url}>{repo.name}</a>
                         ({repo.stargazers_count} stars)
                         <br/>
@@ -55,9 +56,11 @@ export default class RepoList extends Component {
             return (
                 <main>
                     <h1>Most Popular JavaScript Projects in Github</h1>
-                    <ol className={styles['repo-list']}>{repoList}</ol>
+                    <ol styleName='repo-list'>{repoList}</ol>
                 </main>
             );
         }
     }
 }
+
+export default CSSModules(RepoList, styles)
