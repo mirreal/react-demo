@@ -19,11 +19,15 @@ module.exports = {
             // loader: 'style!css!less'
             // loader: ExtractTextPlugin.extract('style-loader', 'css-loader!less-loader')
             // loader: 'style!css?module&localIdentName=[name]__[local]___[hash:base64:5]!less'
-            loader: ExtractTextPlugin.extract('style', 'css?module&localIdentName=[name]__[local]___[hash:base64:5]!less-loader')
+            loader: ExtractTextPlugin.extract('style', 'css?module&localIdentName=[name]__[local]___[hash:base64:5]!less')
         }, {
             test: /\.css$/,
             // loader: 'style!css?module&localIdentName=[name]__[local]___[hash:base64:5]!postcss'
-            loader: ExtractTextPlugin.extract('style', 'css?module&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader')
+            loader: ExtractTextPlugin.extract('style', 'css?module&localIdentName=[name]__[local]___[hash:base64:5]!postcss')
+            // loader: ExtractTextPlugin.extract({
+            //     fallbackLoader: 'style-loader',
+            //     loader: 'css-loader?module&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader'
+            // })
         }]
     },
     entry: [
