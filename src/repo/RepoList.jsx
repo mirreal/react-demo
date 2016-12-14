@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import style from './style.less'
-// import style from './style.css'
-console.log(style)
+import styles from './style.less'
+// import styles from './style.css'
+console.log(styles)
 
 export default class RepoList extends Component {
     constructor(props) {
@@ -36,7 +36,7 @@ export default class RepoList extends Component {
             let repos = this.state.data.items;
             let repoList = repos.map((repo, index) => {
                 return (
-                    <li className={style['repo-item']} key={index}>
+                    <li className={styles['repo-item']} key={index}>
                         <a href={repo.html_url}>{repo.name}</a>
                         ({repo.stargazers_count} stars)
                         <br/>
@@ -49,7 +49,7 @@ export default class RepoList extends Component {
             return (
                 <main>
                     <h1>Most Popular JavaScript Projects in Github</h1>
-                    <ol className={style['repo-list']}>{repoList}</ol>
+                    <ol className={styles['repo-list']}>{repoList}</ol>
                 </main>
             );
         }

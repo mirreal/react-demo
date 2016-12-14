@@ -7,7 +7,7 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.jsx?$/,
-            loader: 'babel-loader',
+            loader: 'babel',
             query: {
                 presets: [
                     'es2015',
@@ -18,9 +18,8 @@ module.exports = {
             test: /\.less$/,
             // loader: 'style!css!less'
             // loader: ExtractTextPlugin.extract('style-loader', 'css-loader!less-loader')
-            // loader: ExtractTextPlugin.extract('style!css?module!less')
             // loader: 'style!css?module&localIdentName=[name]__[local]___[hash:base64:5]!less?sourceMap=true'
-            loader: ExtractTextPlugin.extract('style-loader', 'css-loader?module&localIdentName=[name]__[local]___[hash:base64:5]!less-loader')
+            loader: ExtractTextPlugin.extract('style', 'css?module&localIdentName=[name]__[local]___[hash:base64:5]!less-loader')
         }, {
             test: /\.css$/,
             loader: 'style!css?module&localIdentName=[name]__[local]___[hash:base64:5]'
