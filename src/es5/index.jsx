@@ -3,5 +3,5 @@ var React = require('react')
 var Hello = require('./hello.jsx')
 
 ReactDOM.render(
-    <Hello name="Neil"/>, document.getElementById('container')
+    <Hello name='Neil'/>, document.getElementById('container')
 )

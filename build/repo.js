@@ -76,7 +76,7 @@ var repo =
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var request = new _es6Promise2.default(function (resolve, reject) {
+	var request = new _es6Promise2.default(function (resolve) {
 	    _zeptoModules2.default.getJSON('https://api.github.com/search/repositories?q=javascript&sort=stars', function (res) {
 	        resolve(res);
 	    });

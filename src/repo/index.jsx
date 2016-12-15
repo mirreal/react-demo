@@ -4,7 +4,7 @@ import Promise from 'es6-promise'
 import $ from 'zepto-modules'
 import RepoList from './RepoList'
 
-let request = new Promise((resolve, reject) => {
+let request = new Promise((resolve) => {
     $.getJSON('https://api.github.com/search/repositories?q=javascript&sort=stars', res => {
         resolve(res)
     })

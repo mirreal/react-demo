@@ -150,4 +150,9 @@ cssnext 包含 autoprefixer
 }
 ```
 
-##
+## JSCS
+
+### validateLineBreaks
+
+* LF
+* CRLF
