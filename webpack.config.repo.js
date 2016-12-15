@@ -40,6 +40,9 @@ module.exports = {
         library: 'repo',
         libraryTarget: 'var'
     },
+    resolve: {
+        extensions: ['', '.js', '.jsx']
+    },
     plugins: [
         new ExtractTextPlugin('repo.css')
     ],

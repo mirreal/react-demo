@@ -107,7 +107,23 @@ loader: 'style!css!postcss'
 loader: 'style!css?module&localIdentName=[name]__[local]___[hash:base64:5]!postcss'
 ```
 
+* resolve 定义可以被 import 的文件后缀
+
+```js
+resolve: {
+    extensions: ['', '.js', '.jsx']
+}
+```
+
 ## 内联样式
+
+##  React 服务器端渲染
+
+引入的是 `react-dom/server`
+
+调用 renderToString 方法，类似于使用模板引擎的功能
+
+似乎也没有什么
 
 ## postcss
 
@@ -133,3 +149,5 @@ cssnext 包含 autoprefixer
     border-radius: var(--borderRadius);
 }
 ```
+
+##
