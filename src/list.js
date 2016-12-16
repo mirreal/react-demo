@@ -8,9 +8,7 @@
 const fs = require('fs')
 const path = require('path')
 
-
 let fileList = [];
-
 
 function walk(path) {
     const dirList = fs.readdirSync(path);
