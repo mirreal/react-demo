@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --config webpack.config.js & webpack-dev-server --inline --hot --port 9999",
-    "es5": "webpack --config webpack.config.es5.js",
-    "es6": "webpack --config webpack.config.es6.js -p",
+    "es5": "webpack --config webpack.config.es5.js -p",
+    "es6": "webpack --config webpack.config.es6.js",
     "repo": "webpack --config webpack.config.repo.js --progress --colors --watch & webpack-dev-server --inline --hot --port 9999"
   },
   "repository": {
@@ -47,8 +47,10 @@
   "dependencies": {
     "es6-promise": "^4.0.5",
     "iscroll": "^5.2.0",
+    "preact-compat": "^3.9.4",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-lite": "^0.15.30",
     "zepto": "^1.2.0",
     "zepto-modules": "^1.0.1"
   }
