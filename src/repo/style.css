@@ -17,11 +17,15 @@
 }
 
 :global(.btn) {
-    border-radius: 6px;
+    border-radius: 6px;Ç
 }
 
-.no-use {
+#!/usr/bin/env {
     display: flex;
     transition: scale(2) 2s;
     background: red;
+}
+
+.panel {
+    color: #6F6F6F;
 }
